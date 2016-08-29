@@ -1,0 +1,28 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>substr</short-name>
+    <tag>
+        <name>substring</name>
+        <tag-class>private_tags.SubstrHandler</tag-class>
+        <description>Substring function.</description>
+        <attribute>
+            <name>input</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>start</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>end</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+    <tag>
+        <name>status</name>
+        <tag-class>private_tags.StatusHandler</tag-class>
+        <body-content>JSP</body-content>
+        <description>Check Status Via Function</description>
+    </tag>
+</taglib>
